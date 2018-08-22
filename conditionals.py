@@ -4,12 +4,16 @@
 
 # Evaluation function
 def evaluate(var):
-    if var <= 4:
-        print("var is <= 4")
-    elif var >= 8:
+    print(var)
+    if var is 5:
+        print("var is 5")
+    elif var == 6:
+        print("var is 6")
+    elif var >= 7:
         print("var is >= 8")
     else:
-        print("var is 5, 6, or 7")
+        print("var is less than 5")
+    print("------")
 
 def trueFalse():
     return True
@@ -17,7 +21,7 @@ def trueFalse():
 # Run
 if __name__ == "__main__":
     # Assign x, y, z
-    x = 4
+    x = 5
     y = 6
     z = y + x
     # x, y, z = 4, 6, 2
