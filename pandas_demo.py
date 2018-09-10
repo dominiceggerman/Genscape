@@ -23,6 +23,7 @@ if __name__ == '__main__':
     # df["Scheduled (MMcf)"] = mmcf  # Adding column to df.  There are different ways to do this
     # df = df.drop(columns=["Design (BZ)", "Available (BZ)"])  # Drop the design cap column
     # df = df[["Effective Date", "Scheduled (BZ)", "Scheduled (MMcf)", "Operational (BZ)"]]  # Rearrange the columns
+    # df = df.iloc[::-1]  # Reverse rows of df
     # print(df)
     
     # # Ouput with different column headers and no index
