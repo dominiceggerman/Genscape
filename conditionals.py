@@ -24,7 +24,7 @@ if __name__ == "__main__":
     x = 5
     y = 6
     z = y + x
-    # x, y, z = 4, 6, 2
+    x, y, z = 4, 6, 22
 
     evaluate(x)  # Pass x as an arguement to the evaluate() function
     evaluate(y)
