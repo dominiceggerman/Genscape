@@ -3,6 +3,7 @@
 # https://matplotlib.org/tutorials/introductory/sample_plots.html - Types of plots
 import pandas
 import matplotlib.pyplot as plt
+import numpy as np
 
 if __name__ == '__main__':
     # Plot the data we created in pandas
