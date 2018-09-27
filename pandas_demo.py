@@ -4,9 +4,11 @@ import pandas
 if __name__ == '__main__':
     # Read the csv file into a variable
     df = pandas.read_csv("Wagoner East (2).csv")
-    # print(df)
+    print(df)
 
     # # Accessing a row
+    print(df.ix(:, 1))
+    # # Accessing a column
     # print(df["Effective Date"].values)
 
     # # Print date and scheduled cap
