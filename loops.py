@@ -4,7 +4,7 @@ import time
 
 def loopingExample():
     items = ["pencil", "pen", "paper"]
-    to_buy = ["printer", "ink"]
+    to_buy = ["printer", "ink", 4]
 
     # Showing loop and append
     for item in to_buy:
@@ -23,8 +23,8 @@ def loopingExample():
 
 def rangesExample():
     # Showing range()
-    for x in range(6):
-        print(x)
+    # for x in range(6):
+    #     print(x)
     for x in range(3, 30, 3):
         print(x)
 
@@ -32,12 +32,12 @@ def rangesExample():
 def timeThis(x):
 
     # Slow way
-    y = []
-    for i in range(x):
-        y.append(i)
+    # y = []
+    # for i in range(x):
+    #     y.append(i)
 
     # Fast way (generators)
-    # y = [i for i in range(x)]
+    y = [i for i in range(x)]
 
 if __name__ == "__main__":
 
@@ -47,8 +47,8 @@ if __name__ == "__main__":
     # Using a range
     # rangesExample()
 
-    # # Time excecution of function
+    # # # Time excecution of function
     startT = time.time()
-    timeThis(20000)  # 'small' numbers
-    # timeThis(20000000)  # large numbers
+    # timeThis(20000)  # 'small' numbers
+    timeThis(20000000)  # large numbers
     print(time.time() - startT)

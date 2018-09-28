@@ -14,23 +14,21 @@ if __name__ == '__main__':
 
     # # Basic plot
     # plt.plot(df["Date"].values, df["Sched (MMcf)"].values)
-    # plt.plot(df["Date"].values, df["Opcap (BZ)"].values / 1030)
     # plt.ylabel("MMcf/d")
     # plt.title("Wagoner East flows")
     # plt.legend()
     # plt.show()  # Show plot
 
     # # This looks messy - cleanup
-    # plt.plot(df["Date"].values, df["Sched (MMcf)"].values, label="Scheduled", color="green", linestyle="dashed")
-    # plt.plot(df["Date"].values, df["Opcap (BZ)"].values / 1030, label="Operational", color="blue", linestyle="solid")
-    # plt.ylabel("MMcf/d")
-    # plt.title("Wagoner East flows")
-    # plt.legend()
+    plt.plot(df["Date"].values, df["Sched (MMcf)"].values, label="Scheduled", color="green", linestyle="dashed")
+    plt.ylabel("MMcf/d")
+    plt.title("Wagoner East flows")
+    plt.legend()
 
-    # plt.xticks(df["Date"].values[::2], rotation=90)
-    # plt.legend().draggable()
-    # plt.tight_layout()
+    plt.xticks(df["Date"].values[::2], rotation=90)
+    plt.legend().draggable()
+    plt.tight_layout()
 
-    # plt.show()
+    plt.show()
 
     # See tutorials for more plot types

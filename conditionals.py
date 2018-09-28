@@ -15,7 +15,7 @@ def evaluate(var):
         print("var is less than 5")
     print("------")
 
-def trueFalse():
+def frank():
     return True
 
 # Run
@@ -24,12 +24,12 @@ if __name__ == "__main__":
     x = 5
     y = 6
     z = y + x
-    x, y, z = 4, 6, 22
+    # x, y, z = 4, 6, 22
 
     evaluate(x)  # Pass x as an arguement to the evaluate() function
     evaluate(y)
     evaluate(z)
 
-    a = trueFalse()
+    a = frank()
     if a:
         print("a is True")
